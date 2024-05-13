@@ -10,8 +10,11 @@ public class Main {
         System.out.println("Podaj swoj pin (4 cyfry): ");
         int pin = n.nextInt();
 
-        ConnectDB log = new ConnectDB();
-        log.logToATM(login,pin);
+
+
+       Users u1 = new Users();
+        u1.Polacz(login,pin);
+
 
     }
 }
